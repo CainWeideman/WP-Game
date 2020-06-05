@@ -1,0 +1,10 @@
+Taakverdeling
+Welke informatie moet van de servers naar de clients?
+2 players > hoe?
+Javascript > client side
+Gebruik maken van jQuery waar mogelijk
+AJAX Handler script > prevent refreshing
+
+In javascript de game bouwen
+PHP Templating
+JSON > status of current game
