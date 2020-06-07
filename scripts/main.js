@@ -23,6 +23,7 @@ function draw_cross() {
     })
 }
 
+
 $(function(){
     change_page();
     //draw_circle();
