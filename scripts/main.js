@@ -4,13 +4,6 @@ function change_page() {
     })
 }
 
-function change_square() {
-    $("#sq").click(function () {
-        $(this).css("background-color", "red")
-    })
-
-}
-
 function draw_circle() {
     let circle = document.createElement('DIV');
     $(circle).addClass('circle');
@@ -20,7 +13,6 @@ function draw_circle() {
 }
 
 $(function(){
-    change_square();
     change_page();
     draw_circle();
 });
