@@ -6,7 +6,6 @@ include __DIR__ . '/tpl/head.php';
 
 include __DIR__ . '/tpl/body-start.php';
 ?>
-    <h1 id="header">Tic-Tac-Toe</h1>
     <div id="content">
         <div id="board">
             <div id="sq0" class="square"></div>

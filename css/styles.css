@@ -36,3 +36,21 @@ body {
 .clr {
     clear: both;
 }
+
+.row {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.column {
+    align-content: center;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.row-status-bar {
+    display: flex;
+    text-align: center;
+}
