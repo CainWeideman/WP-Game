@@ -6,23 +6,20 @@ include __DIR__ . '/tpl/head.php';
 
 include __DIR__ . '/tpl/body-start.php';
 ?>
-    <h1 id="header">Tic-Tac-Toe</h1>
-    <div id="content">
-        <div id="board">
-            <div id="sq0" class="square"></div>
-            <div id="sq1" class="square"></div>
-            <div id="sq2" class="square"></div>
-            <div class="clr"></div>
-            <div id="sq3" class="square"></div>
-            <div id="sq4" class="square"></div>
-            <div id="sq5" class="square"></div>
-            <div class="clr"></div>
-            <div id="sq6" class="square"></div>
-            <div id="sq7" class="square"></div>
-            <div id="sq8" class="square"></div>
-            <div class="clr"></div>
+<?php
+
+?>
+
+
+    <form action="index.php" method="POST">
+        <div class="form-group">
+            <label for="input-name">Your name:</label>
+            <input type="text" class="form-control" id="input-name" placeholder="Enter your name" name="name">
         </div>
-    </div>
+        <div class="form-group">
+        </div>
+        <div id="submit" class="btn btn-primary">Submit</div>
+    </form>
 <?php
 include __DIR__ . '/tpl/body-end.php';
 ?>
