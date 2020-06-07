@@ -40,8 +40,13 @@ body {
 .row {
     display: flex;
     flex-direction: column;
+    text-align: center;
     justify-content: space-around;
     align-content: center;
+}
+
+.header {
+    background-color: lightgray;
 }
 
 .column {
@@ -50,7 +55,11 @@ body {
     justify-content: space-between;
 }
 
-.row-status-bar {
+.status-bar {
     display: flex;
-    text-align: center;
+
 }
+
+
+
+
