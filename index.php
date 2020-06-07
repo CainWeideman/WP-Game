@@ -10,7 +10,6 @@ include __DIR__ . '/tpl/body-start.php';
 
 ?>
 
-
     <form action="index.php" method="POST">
         <div class="form-group">
             <label for="input-name">Your name:</label>

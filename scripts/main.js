@@ -5,14 +5,14 @@ function change_page() {
 }
 
 function change_square() {
-    $("#sq0").click(function () {
-        $("#sq0").css("background-color", "red")
+    $("#sq").click(function () {
+        $(this).css("background-color", "red")
     })
+
 }
 
 $(function(){
     change_square()
     change_page()
-
-
 });
+
