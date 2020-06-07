@@ -11,8 +11,17 @@ function change_square() {
 
 }
 
+function draw_circle() {
+    let circle = document.createElement('DIV');
+    $(circle).addClass('circle');
+    $('.square').click(function () {
+        $(this).append(circle);
+    })
+}
+
 $(function(){
-    change_square()
-    change_page()
+    change_square();
+    change_page();
+    draw_circle();
 });
 

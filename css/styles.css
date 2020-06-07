@@ -43,6 +43,7 @@ body {
     text-align: center;
     justify-content: space-around;
     align-content: center;
+
 }
 
 .header {
@@ -58,6 +59,15 @@ body {
 .status-bar {
     display: flex;
 
+}
+
+.circle {
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+    fill: none;
+    position: absolute;
+    background-color: red;
 }
 
 
