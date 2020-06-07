@@ -4,12 +4,6 @@ function change_page() {
     })
 }
 
-function change_square() {
-    $("#sq").click(function () {
-        $(this).css("background-color", "red")
-    })
-
-}
 
 function draw_circle() {
     let circle = document.createElement('DIV');
@@ -19,9 +13,20 @@ function draw_circle() {
     })
 }
 
+function draw_cross() {
+    let cross = document.createElement('DIV');
+    let X = document.createElement('SPAN');
+    $(X).text('X');
+    $(X).addClass('X-mark');
+    $(cross).append(X);
+    $('.square').click(function () {
+        $(this).append(cross);
+    })
+}
+
 $(function(){
-    change_square();
     change_page();
-    draw_circle();
+    //draw_circle();
+    draw_cross();
 });
 
