@@ -19,27 +19,29 @@ $score = json_decode($json_file, true);
 $score = array_reverse($score);
 $score_board = "";
 
-    $score_board.= '<div class="container">';
-    $score_board.= '<div class="row header">';
-    $score_board.= '<h1>Tic-Tac-Toe</h1>';
-    $score_board.= '<div class="status-bar">';
-    $score_board.= '<div class="status col-md-4">';
-    $score_board.= '<h3>Name: ' . $score[0]["name"] . '</h3>';
-    $score_board.= '<p class="wins">Wins: ' . $score[0]["wins"] . '</p>';
-    $score_board.= '<p class="losses">Losses: ' . $score[0]["losses"] . '</p>';
-    $score_board.= '<p class="draws">Draws: ' . $score[0]["draws"] . '</p>';
-    $score_board.= '</div>';
-    $score_board.= '<div class="col-md-4"><h4>It is the turn of (PLAYERNAME)</h4>';
-    $score_board.= '</div>';
-    $score_board.= '<h3>Name: ' . $score[1]["name"] . '</h3>';
-    $score_board.= '<p class="wins">Wins: ' . $score[1]["wins"] . '</p>';
-    $score_board.= '<p class="losses">Losses: ' . $score[1]["losses"] . '</p>';
-    $score_board.= '<p class="draws">Draws: ' . $score[1]["draws"] . '</p>';
-    $score_board.= '</div>';
-    $score_board.= '</div>';
-    $score_board.= '</div>';
+$score_board.= '<div class="container">';
+$score_board.= '<div class="row header">';
+$score_board.= '<h1>Tic-Tac-Toe</h1>';
+$score_board.= '<div class="status-bar">';
+$score_board.= '<div class="status col-md-4">';
+$score_board.= '<h3>Name: ' . $score[0]["name"] . '</h3>';
+$score_board.= '<p class="wins">Wins: ' . $score[0]["wins"] . '</p>';
+$score_board.= '<p class="losses">Losses: ' . $score[0]["losses"] . '</p>';
+$score_board.= '<p class="draws">Draws: ' . $score[0]["draws"] . '</p>';
+$score_board.= '</div>';
+$score_board.= '<div class="col-md-4"><h4>It is the turn of (PLAYERNAME)</h4>';
+$score_board.= '</div>';
+$score_board.= '<div class="status col-md-4">';
+$score_board.= '<h3>Name: ' . $score[1]["name"] . '</h3>';
+$score_board.= '<p class="wins">Wins: ' . $score[1]["wins"] . '</p>';
+$score_board.= '<p class="losses">Losses: ' . $score[1]["losses"] . '</p>';
+$score_board.= '<p class="draws">Draws: ' . $score[1]["draws"] . '</p>';
+$score_board.= '</div>';
+$score_board.= '</div>';
+$score_board.= '</div>';
+$score_board.= '</div>';
 
-    echo $score_board
+echo $score_board
 
 ?>
 
