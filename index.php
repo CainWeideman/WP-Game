@@ -10,14 +10,12 @@ include __DIR__ . '/tpl/body-start.php';
 
 ?>
 
-    <form action="index.php" method="POST">
+    <form action="scripts/add_name.php" method="POST">
         <div class="form-group">
-            <label for="input-name">Your name:</label>
-            <input type="text" class="form-control" id="input-name" placeholder="Enter your name" name="name">
+            <label for="name">Your name:</label>
+            <input type="text" class="form-control" id="name" placeholder="Enter your name" name="name">
         </div>
-        <div class="form-group">
-        </div>
-        <div id="submit" class="btn btn-primary">Submit</div>
+        <button type="submit" id="submit" class="btn btn-primary">Submit</button>
     </form>
 <?php
 include __DIR__ . '/tpl/body-end.php';
