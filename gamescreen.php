@@ -58,17 +58,17 @@ echo $score_board
 </div>
 <div id="content">
     <div id="board">
-        <div id="sq" class="square"></div>
-        <div id="sq" class="square"></div>
-        <div id="sq" class="square"></div>
+        <div id="sq1" class="square"></div>
+        <div id="sq2" class="square"></div>
+        <div id="sq3" class="square"></div>
         <div class="clr"></div>
-        <div id="sq" class="square"></div>
-        <div id="sq" class="square"></div>
-        <div id="sq" class="square"></div>
+        <div id="sq4" class="square"></div>
+        <div id="sq5" class="square"></div>
+        <div id="sq6" class="square"></div>
         <div class="clr"></div>
-        <div id="sq" class="square"></div>
-        <div id="sq" class="square"></div>
-        <div id="sq" class="square"></div>
+        <div id="sq7" class="square"></div>
+        <div id="sq8" class="square"></div>
+        <div id="sq9" class="square"></div>
         <div class="clr"></div>
     </div>
 </div>
