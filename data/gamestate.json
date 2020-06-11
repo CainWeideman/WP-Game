@@ -1,0 +1,29 @@
+[
+  {"square": "sq1",
+    "value": ""
+  },
+  {"square": "sq2",
+    "value": "o"
+  },
+  {"square": "sq3",
+    "value": "x"
+  },
+  {"square": "sq4",
+    "value": "x"
+  },
+  {"square": "sq5",
+    "value": "o"
+  },
+  {"square": "sq6",
+    "value": "o"
+  },
+  {"square": "sq7",
+    "value": "x"
+  },
+  {"square": "sq8",
+    "value": "o"
+  },
+  {"square": "sq9",
+    "value": "x"
+  }
+]
