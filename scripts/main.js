@@ -27,9 +27,32 @@ function draw() {
     })
 }
 
+function fetchJSONFile(path, callback) {
+    var httpRequest = new XMLHttpRequest();
+    httpRequest.onreadystatechange = function() {
+        if (httpRequest.readyState === 4) {
+            if (httpRequest.status === 200) {
+                var data = JSON.parse(httpRequest.responseText);
+                if (callback) callback(data);
+            }
+        }
+    };
+    httpRequest.open('GET', path);
+    httpRequest.send();
+}
 
 $(function(){
     change_page();
     draw();
+    window.setInterval(function () {
+        fetchJSONFile('data/data.json', function(data){
+            info = data
+
+            var winsp1 = document.getElementById("winsp1").innerHTML= info[0]["wins"];
+            var winsp2 = document.getElementById("winsp2").innerHTML= info[1]["wins"];
+            document.getElementById("winsp1").innerHTML = "Wins: " + winsp1;
+            document.getElementById("winsp2").innerHTML = "Wins: " + winsp2;
+        });
+    }, 10);
 });
 
