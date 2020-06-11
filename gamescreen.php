@@ -25,17 +25,17 @@ $score_board.= '<h1>Tic-Tac-Toe</h1>';
 $score_board.= '<div class="status-bar">';
 $score_board.= '<div class="status col-md-4">';
 $score_board.= '<h3>Name: ' . $score[0]["name"] . '</h3>';
-$score_board.= '<p class="wins">Wins: ' . $score[0]["wins"] . '</p>';
-$score_board.= '<p class="losses">Losses: ' . $score[0]["losses"] . '</p>';
-$score_board.= '<p class="draws">Draws: ' . $score[0]["draws"] . '</p>';
+$score_board.= '<p id="winsp1">Wins: ' . $score[0]["wins"] . '</p>';
+$score_board.= '<p id="lossesp1">Losses: ' . $score[0]["losses"] . '</p>';
+$score_board.= '<p id="drawsp1">Draws: ' . $score[0]["draws"] . '</p>';
 $score_board.= '</div>';
 $score_board.= '<div class="col-md-4"><h4>It is the turn of (PLAYERNAME)</h4>';
 $score_board.= '</div>';
 $score_board.= '<div class="status col-md-4">';
 $score_board.= '<h3>Name: ' . $score[1]["name"] . '</h3>';
-$score_board.= '<p class="wins">Wins: ' . $score[1]["wins"] . '</p>';
-$score_board.= '<p class="losses">Losses: ' . $score[1]["losses"] . '</p>';
-$score_board.= '<p class="draws">Draws: ' . $score[1]["draws"] . '</p>';
+$score_board.= '<p id="winsp2">Wins: ' . $score[1]["wins"] . '</p>';
+$score_board.= '<p id="lossesp2">Losses: ' . $score[1]["losses"] . '</p>';
+$score_board.= '<p id="drawsp2">Draws: ' . $score[1]["draws"] . '</p>';
 $score_board.= '</div>';
 $score_board.= '</div>';
 $score_board.= '</div>';
@@ -44,9 +44,6 @@ $score_board.= '</div>';
 echo $score_board
 
 ?>
-
-<div class="col-md-12">
-    <div class="row">
 
 <div class="col-md-12">
     <div class="row">
