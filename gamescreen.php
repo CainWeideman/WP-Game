@@ -52,6 +52,10 @@ echo $score_board
     <div class="row">
 
 <h1 id="header">Tic-Tac-Toe</h1>
+<div class="form-group">
+    <label for="playerturn">Player:</label>
+    <input type="number" class="form-control" id="playerturn" name="playerturn" value='1'>
+</div>
 <div id="content">
     <div id="board">
         <div id="sq" class="square"></div>
