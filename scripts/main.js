@@ -19,25 +19,40 @@ function fetchJSONFile(path, callback) {
     httpRequest.send();
 }
 
-function drawsq1 () {
-    var json_file = $.getJSON("data/gamestate.json")
-    $("#sq1").click(function () {
-        if (document.getElementById("playerturn").value === "2") {
-            document.getElementById("playerturn").value = "1";
-            gamestate[0]["value"] = "x"
-            console.log(json_file)
+function change_turn(){
+    $('#take_turn').click(function(){
+        if (document.getElementById("playerturn").value === "1"){
+            document.getElementById('playerturn').value = "2";
         }
-        else {
-            document.getElementById("playerturn").value = "2";
-            gamestate[0]["value"] = "x"
-            console.log(json_file)
+
+        else if (document.getElementById("playerturn").value === "2"){
+            document.getElementById('playerturn').value = "1";
         }
+    })
+}
+
+function draw () {
+    $('.square').click(function () {
+        if (document.getElementById("playerturn").value === "1") {
+            if($(this).attr('class') === 'square') {
+                $(this).addClass('active1');
+            }
+        }
+
+        else if (document.getElementById("playerturn").value === "2") {
+            if($(this).attr('class') === 'square'){
+                $(this).addClass('active2');
+            }
+        }
+
     })
 }
 
 
 $(function() {
     change_page();
+    change_turn()
+    draw()
 
     window.setInterval(function () {
 
