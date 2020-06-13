@@ -40,7 +40,6 @@ $(function() {
     change_page();
 
     window.setInterval(function () {
-        //drawsq1()
         fetchJSONFile('data/data.json', function (data) {
             info = data
 
@@ -48,6 +47,14 @@ $(function() {
             var winsp2 = document.getElementById("winsp2").innerHTML = info[0]["wins"];
             document.getElementById("winsp1").innerHTML = "Wins: " + winsp1;
             document.getElementById("winsp2").innerHTML = "Wins: " + winsp2;
+            var lossesp1 = document.getElementById("lossesp1").innerHTML = info[1]["losses"];
+            var lossesp2 = document.getElementById("lossesp2").innerHTML = info[0]["losses"];
+            document.getElementById("lossesp1").innerHTML = "Losses: " + lossesp1;
+            document.getElementById("lossesp2").innerHTML = "Losses: " + lossesp2;
+            var drawsp1 = document.getElementById("drawsp1").innerHTML = info[1]["draws"];
+            var drawsp2 = document.getElementById("drawsp2").innerHTML = info[0]["draws"];
+            document.getElementById("drawsp1").innerHTML = "Draws: " + drawsp1;
+            document.getElementById("drawsp2").innerHTML = "Draws: " + drawsp2;
         });
     }, 10);
 
