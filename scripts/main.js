@@ -151,6 +151,108 @@ function draw () {
     })
 }
 
+function resetGame() {
+    //alert("Its a tie!")
+    $("#sq1").val("")
+    $("#sq2").val("")
+    $("#sq3").val("")
+    $("#sq4").val("")
+    $("#sq5").val("")
+    $("#sq6").val("")
+    $("#sq7").val("")
+    $("#sq8").val("")
+    $("#sq9").val("")
+}
+
+function checkWin () {
+
+    fetchJSONFile('data/gamestate.json', function (data) {
+        win = data
+        if (win[0]["value"] === win[1]["value"] && win[1]["value"] === win[2]["value"]) {
+            if (win[0]["value"] !== "") {
+                if (win[0]["value"] === "x") {
+                    alert("Player one wins!")
+                }
+                else {
+                    alert("Player two wins!")
+                }
+            }
+        }
+        if (win[3]["value"] === win[4]["value"] && win[4]["value"] === win[5]["value"]) {
+            if (win[3]["value"] !== "") {
+                if (win[3]["value"] === "x") {
+                    alert("Player one wins!")
+                }
+                else {
+                    alert("Player two wins!")
+                }
+            }
+        }
+        if (win[6]["value"] === win[7]["value"] && win[7]["value"] === win[8]["value"]) {
+            if (win[6]["value"] !== "") {
+                if (win[6]["value"] === "x") {
+                    alert("Player one wins!")
+                }
+                else {
+                    alert("Player two wins!")
+                }
+            }
+        }
+        if (win[0]["value"] === win[3]["value"] && win[3]["value"] === win[6]["value"]) {
+            if (win[0]["value"] !== "") {
+                if (win[0]["value"] === "x") {
+                    alert("Player one wins!")
+                }
+                else {
+                    alert("Player two wins!")
+                }
+            }
+        }
+        if (win[1]["value"] === win[4]["value"] && win[4]["value"] === win[7]["value"]) {
+            if (win[1]["value"] !== "") {
+                if (win[1]["value"] === "x") {
+                    alert("Player one wins!")
+                }
+                else {
+                    alert("Player two wins!")
+                }
+            }
+        }
+        if (win[2]["value"] === win[5]["value"] && win[5]["value"] === win[8]["value"]) {
+            if (win[2]["value"] !== "") {
+                if (win[2]["value"] === "x") {
+                    alert("Player one wins!")
+                }
+                else {
+                    alert("Player two wins!")
+                }
+            }
+        }
+        if (win[0]["value"] === win[4]["value"] && win[4]["value"] === win[8]["value"]) {
+            if (win[0]["value"] !== "") {
+                if (win[0]["value"] === "x") {
+                    alert("Player one wins!")
+                }
+                else {
+                    alert("Player two wins!")
+                }
+            }
+        }
+        if (win[2]["value"] === win[4]["value"] && win[4]["value"] === win[6]["value"]) {
+            if (win[2]["value"] !== "") {
+                if (win[2]["value"] === "x") {
+                    alert("Player one wins!")
+                }
+                else {
+                    alert("Player two wins!")
+                }
+            }
+        }
+
+
+    });
+}
+
 
 $(function() {
     change_page();
@@ -211,5 +313,6 @@ $(function() {
             //}
 
         })
+        checkWin()
     }, 10);
 })
