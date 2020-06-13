@@ -171,85 +171,85 @@ function checkWin () {
         if (win[0]["value"] === win[1]["value"] && win[1]["value"] === win[2]["value"]) {
             if (win[0]["value"] !== "") {
                 if (win[0]["value"] === "x") {
-                    alert("Player one wins!")
+                    console.log("Player one wins!")
                 }
                 else {
-                    alert("Player two wins!")
+                    console.log("Player two wins!")
                 }
             }
         }
         if (win[3]["value"] === win[4]["value"] && win[4]["value"] === win[5]["value"]) {
             if (win[3]["value"] !== "") {
                 if (win[3]["value"] === "x") {
-                    alert("Player one wins!")
+                    console.log("Player one wins!")
                 }
                 else {
-                    alert("Player two wins!")
+                    console.log("Player two wins!")
                 }
             }
         }
         if (win[6]["value"] === win[7]["value"] && win[7]["value"] === win[8]["value"]) {
             if (win[6]["value"] !== "") {
                 if (win[6]["value"] === "x") {
-                    alert("Player one wins!")
+                    console.log("Player one wins!")
                 }
                 else {
-                    alert("Player two wins!")
+                    console.log("Player two wins!")
                 }
             }
         }
         if (win[0]["value"] === win[3]["value"] && win[3]["value"] === win[6]["value"]) {
             if (win[0]["value"] !== "") {
                 if (win[0]["value"] === "x") {
-                    alert("Player one wins!")
+                    console.log("Player one wins!")
                 }
                 else {
-                    alert("Player two wins!")
+                    console.log("Player two wins!")
                 }
             }
         }
         if (win[1]["value"] === win[4]["value"] && win[4]["value"] === win[7]["value"]) {
             if (win[1]["value"] !== "") {
                 if (win[1]["value"] === "x") {
-                    alert("Player one wins!")
+                    console.log("Player one wins!")
                 }
                 else {
-                    alert("Player two wins!")
+                    console.log("Player two wins!")
                 }
             }
         }
         if (win[2]["value"] === win[5]["value"] && win[5]["value"] === win[8]["value"]) {
             if (win[2]["value"] !== "") {
                 if (win[2]["value"] === "x") {
-                    alert("Player one wins!")
+                    console.log("Player one wins!")
                 }
                 else {
-                    alert("Player two wins!")
+                    console.log("Player two wins!")
                 }
             }
         }
         if (win[0]["value"] === win[4]["value"] && win[4]["value"] === win[8]["value"]) {
             if (win[0]["value"] !== "") {
                 if (win[0]["value"] === "x") {
-                    alert("Player one wins!")
+                    console.log("Player one wins!")
                 }
                 else {
-                    alert("Player two wins!")
+                    console.log("Player two wins!")
                 }
             }
         }
         if (win[2]["value"] === win[4]["value"] && win[4]["value"] === win[6]["value"]) {
             if (win[2]["value"] !== "") {
                 if (win[2]["value"] === "x") {
-                    alert("Player one wins!")
+                    console.log("Player one wins!")
                 }
                 else {
-                    alert("Player two wins!")
+                    console.log("Player two wins!")
                 }
             }
         }
         if (win[0]["value"] !== "" && win[1]["value"] !== "" && win[2]["value"] !== "" && win[3]["value"] !== "" && win[4]["value"] !== "" && win[5]["value"] !== "" && win[6]["value"] !== "" && win[7]["value"] !== "" && win[8]["value"] !== "") {
-            alert("Its a tie!")
+            console.log("Its a tie!")
         }
     });
 }
@@ -315,5 +315,5 @@ $(function() {
 
         })
         checkWin()
-    }, 10);
+    }, 100);
 })
