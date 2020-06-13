@@ -248,8 +248,9 @@ function checkWin () {
                 }
             }
         }
-
-
+        if (win[0]["value"] !== "" && win[1]["value"] !== "" && win[2]["value"] !== "" && win[3]["value"] !== "" && win[4]["value"] !== "" && win[5]["value"] !== "" && win[6]["value"] !== "" && win[7]["value"] !== "" && win[8]["value"] !== "") {
+            alert("Its a tie!")
+        }
     });
 }
 
