@@ -55,17 +55,17 @@ echo $score_board
         <div id="content">
             <div id="board">
                 <form action="scripts/turn.php" method="POST">
-                    <div id="sq1" class="square"></div>
-                    <div id="sq2" class="square"></div>
-                    <div id="sq3" class="square"></div>
+                    <input id="sq1" class="square" value="" readonly>
+                    <input id="sq2" class="square" value="" readonly>
+                    <input id="sq3" class="square" value="" readonly>
                     <div class="clr"></div>
-                    <div id="sq4" class="square"></div>
-                    <div id="sq5" class="square"></div>
-                    <div id="sq6" class="square"></div>
+                    <input id="sq4" class="square"value="" readonly>
+                    <input id="sq5" class="square" value="" readonly>
+                    <input id="sq6" class="square" value="" readonly>
                     <div class="clr"></div>
-                    <div id="sq7" class="square"></div>
-                    <div id="sq8" class="square"></div>
-                    <div id="sq9" class="square"></div>
+                    <input id="sq7" class="square" value="" readonly>
+                    <input id="sq8" class="square" value="" readonly>
+                    <input id="sq9" class="square" value="" readonly>
                     <div class="clr"></div>
                     <button type="submit" id="take_turn"></button>
                 </form>

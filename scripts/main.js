@@ -88,7 +88,7 @@ $(function() {
                     $(cross).append(X);
                     let square = document.getElementsByClassName("square")
                     if ($(document.getElementById(gamestate[item]["square"])).contents().length == 0) {
-                        $(document.getElementById(gamestate[item]["square"])).append(cross)
+                        $(document.getElementById(gamestate[item]["square"]).value = 'x')
 
                     }
                 }
@@ -101,7 +101,7 @@ $(function() {
                     $(circle).append(O);
                     let square = document.getElementsByClassName("square")
                     if ($(document.getElementById(gamestate[item]["square"])).contents().length == 0) {
-                        $(document.getElementById(gamestate[item]["square"])).append(circle)
+                        $(document.getElementById(gamestate[item]["square"]).value = 'o')
 
                     }
                 }
