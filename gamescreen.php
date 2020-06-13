@@ -40,7 +40,6 @@ $score_board.= '</div>';
 $score_board.= '</div>';
 $score_board.= '</div>';
 $score_board.= '</div>';
-
 echo $score_board
 
 ?>
@@ -48,25 +47,27 @@ echo $score_board
 <div class="col-md-12">
     <div class="row">
 
-<h1 id="header">Tic-Tac-Toe</h1>
-<div class="form-group">
-    <label for="playerturn">Player:</label>
-    <input type="number" class="form-control" id="playerturn" name="playerturn" value='1'>
-</div>
-<div id="content">
-    <div id="board">
-        <div id="sq1" class="square"></div>
-        <div id="sq2" class="square"></div>
-        <div id="sq3" class="square"></div>
-        <div class="clr"></div>
-        <div id="sq4" class="square"></div>
-        <div id="sq5" class="square"></div>
-        <div id="sq6" class="square"></div>
-        <div class="clr"></div>
-        <div id="sq7" class="square"></div>
-        <div id="sq8" class="square"></div>
-        <div id="sq9" class="square"></div>
-        <div class="clr"></div>
+    <h1 id="header">Tic-Tac-Toe</h1>
+    <div class="form-group">
+        <label for="playerturn">Player:</label>
+        <input type="number" class="form-control" id="playerturn" name="playerturn" value='1'>
+    </div>
+        <div id="content">
+            <div id="board">
+                <div id="sq1" class="square"></div>
+                <div id="sq2" class="square"></div>
+                <div id="sq3" class="square"></div>
+                <div class="clr"></div>
+                <div id="sq4" class="square"></div>
+                <div id="sq5" class="square"></div>
+                <div id="sq6" class="square"></div>
+                <div class="clr"></div>
+                <div id="sq7" class="square"></div>
+                <div id="sq8" class="square"></div>
+                <div id="sq9" class="square"></div>
+                <div class="clr"></div>
+            </div>
+        </div>
     </div>
 </div>
 <?php
