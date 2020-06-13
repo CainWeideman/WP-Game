@@ -6,7 +6,7 @@
     "value": "o"
   },
   {"square": "sq3",
-    "value": "x"
+    "value": "o"
   },
   {"square": "sq4",
     "value": "x"
@@ -15,13 +15,13 @@
     "value": "o"
   },
   {"square": "sq6",
-    "value": "o"
-  },
-  {"square": "sq7",
     "value": "x"
   },
+  {"square": "sq7",
+    "value": ""
+  },
   {"square": "sq8",
-    "value": "o"
+    "value": ""
   },
   {"square": "sq9",
     "value": "x"

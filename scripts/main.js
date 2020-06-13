@@ -40,9 +40,9 @@ $(function() {
     change_page();
 
     window.setInterval(function () {
+
         fetchJSONFile('data/data.json', function (data) {
             info = data
-
             var winsp1 = document.getElementById("winsp1").innerHTML = info[1]["wins"];
             var winsp2 = document.getElementById("winsp2").innerHTML = info[0]["wins"];
             document.getElementById("winsp1").innerHTML = "Wins: " + winsp1;
@@ -56,10 +56,9 @@ $(function() {
             document.getElementById("drawsp1").innerHTML = "Draws: " + drawsp1;
             document.getElementById("drawsp2").innerHTML = "Draws: " + drawsp2;
         });
-    }, 10);
 
 
-        fetchJSONFile('data/gamestate.json', function(data){
+        fetchJSONFile('data/gamestate.json', function (data) {
             gamestate = data
 
             for (var item in gamestate) {
@@ -73,7 +72,7 @@ $(function() {
                     $(X).attr('class', 'X-mark');
                     $(cross).append(X);
                     let square = document.getElementsByClassName("square")
-                    if ($(document.getElementById(gamestate[item]["square"])).contents().length === 0) {
+                    if ($(document.getElementById(gamestate[item]["square"])).contents().length == 0) {
                         $(document.getElementById(gamestate[item]["square"])).append(cross)
 
                     }
@@ -86,14 +85,16 @@ $(function() {
                     $(O).attr('class', 'O-mark');
                     $(circle).append(O);
                     let square = document.getElementsByClassName("square")
-                    if ($(document.getElementById(gamestate[item]["square"])).contents().length === 0) {
+                    if ($(document.getElementById(gamestate[item]["square"])).contents().length == 0) {
                         $(document.getElementById(gamestate[item]["square"])).append(circle)
 
                     }
                 }
             }
 
-        });
+        })
+    }, 10);
+})
 
-    }, 1000);
+
 
