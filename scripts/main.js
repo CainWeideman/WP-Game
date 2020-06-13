@@ -19,18 +19,6 @@ function fetchJSONFile(path, callback) {
     httpRequest.send();
 }
 
-function change_turn(){
-    $('#take_turn').click(function(){
-        if (document.getElementById("playerturn").value === "1"){
-            document.getElementById('playerturn').value = "2";
-        }
-
-        else if (document.getElementById("playerturn").value === "2"){
-            document.getElementById('playerturn').value = "1";
-        }
-    })
-}
-
 function draw () {
     $('#sq1').click(function () {
         $(".square").not("#sq1").attr('value', '');
@@ -166,7 +154,6 @@ function draw () {
 
 $(function() {
     change_page();
-    change_turn()
     draw()
 
     window.setInterval(function () {
@@ -206,33 +193,22 @@ $(function() {
             for (var item in gamestate) {
                 // To check for crosses in the json
                 if (gamestate[item]["value"] === "x") {
-
-                    var cross = document.createElement('DIV');
-                    var X = document.createElement('SPAN');
-
-                    $(X).text('X');
-                    $(X).attr('class', 'X-mark');
-                    $(cross).append(X);
+                    $(document.getElementById(gamestate[item]["square"]).disabled = true);
                     let square = document.getElementsByClassName("square")
-                    if ($(document.getElementById(gamestate[item]["square"])).contents().length == 0) {
-                        $(document.getElementById(gamestate[item]["square"]).value = 'x')
+                    //if ($(document.getElementById(gamestate[item]["square"])).contents().length == 0) {
+                    $(document.getElementById(gamestate[item]["square"]).value = 'x')
 
-                    }
-                }
+                   }
                 // To check for circles in the json
                 if (gamestate[item]["value"] === "o") {
-                    var circle = document.createElement('DIV');
-                    var O = document.createElement('SPAN');
-                    $(O).text('O');
-                    $(O).attr('class', 'O-mark');
-                    $(circle).append(O);
+                    $(document.getElementById(gamestate[item]["square"]).disabled = true);
                     let square = document.getElementsByClassName("square")
-                    if ($(document.getElementById(gamestate[item]["square"])).contents().length == 0) {
-                        $(document.getElementById(gamestate[item]["square"]).value = 'o')
+                    //if ($(document.getElementById(gamestate[item]["square"])).contents().length == 0) {
+                    $(document.getElementById(gamestate[item]["square"]).value = 'o')
 
                     }
                 }
-            }
+            //}
 
         })
     }, 10);
