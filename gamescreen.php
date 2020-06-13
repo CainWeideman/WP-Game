@@ -54,18 +54,18 @@ echo $score_board
     </div>
         <div id="content">
             <div id="board">
-                <form action="scripts/turn.php" method="POST">
-                    <input id="sq1" class="square" value="" readonly>
-                    <input id="sq2" class="square" value="" readonly>
-                    <input id="sq3" class="square" value="" readonly>
+                <form action="scripts/update_game.php" method="POST">
+                    <input id="sq1" class="square" value="" name="sq1" readonly>
+                    <input id="sq2" class="square" value="" name="sq2" readonly>
+                    <input id="sq3" class="square" value="" name="sq3" readonly>
                     <div class="clr"></div>
-                    <input id="sq4" class="square"value="" readonly>
-                    <input id="sq5" class="square" value="" readonly>
-                    <input id="sq6" class="square" value="" readonly>
+                    <input id="sq4" class="square" value="" name="sq4" readonly>
+                    <input id="sq5" class="square" value="" name="sq5" readonly>
+                    <input id="sq6" class="square" value="" name="sq6" readonly>
                     <div class="clr"></div>
-                    <input id="sq7" class="square" value="" readonly>
-                    <input id="sq8" class="square" value="" readonly>
-                    <input id="sq9" class="square" value="" readonly>
+                    <input id="sq7" class="square" value="" name="sq7" readonly>
+                    <input id="sq8" class="square" value="" name="sq8" readonly>
+                    <input id="sq9" class="square" value="" name="sq9" readonly>
                     <div class="clr"></div>
                     <button type="submit" id="take_turn"></button>
                 </form>
