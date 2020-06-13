@@ -187,6 +187,18 @@ $(function() {
             document.getElementById("drawsp2").innerHTML = "Draws: " + drawsp2;
         });
 
+        fetchJSONFile('data/gamestate.json', function (data) {
+            turn = data
+
+            if(turn[9]["turn"] === "1"){
+                $("#playerturn").attr("value", "1")
+            }
+            else if(turn[9]["turn"] === "2"){
+                $('#playerturn').attr('value', '2')
+            }
+
+        });
+
 
         fetchJSONFile('data/gamestate.json', function (data) {
             gamestate = data
