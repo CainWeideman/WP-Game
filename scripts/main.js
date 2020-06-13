@@ -32,19 +32,140 @@ function change_turn(){
 }
 
 function draw () {
-    $('.square').click(function () {
+    $('#sq1').click(function () {
+        $("#sq2, #sq3, #sq4, #sq5, #sq6, #sq7, #sq8, #sq9").val('');
         if (document.getElementById("playerturn").value === "1") {
             if($(this).attr('class') === 'square') {
-                $(this).addClass('active1');
+                $(this).val('x');
             }
         }
 
         else if (document.getElementById("playerturn").value === "2") {
             if($(this).attr('class') === 'square'){
-                $(this).addClass('active2');
+                $(this).val('o');
+            }
+        }
+    })
+
+    $('#sq2').click(function () {
+        $("#sq1, #sq3, #sq4, #sq5, #sq6, #sq7, #sq8, #sq9").val('');
+        if (document.getElementById("playerturn").value === "1") {
+            if($(this).attr('class') === 'square') {
+                $(this).val('x');
             }
         }
 
+        else if (document.getElementById("playerturn").value === "2") {
+            if($(this).attr('class') === 'square'){
+                $(this).val('o');
+            }
+        }
+    })
+
+    $('#sq3').click(function () {
+        $("#sq1, #sq2, #sq4, #sq5, #sq6, #sq7, #sq8, #sq9").val('');
+        if (document.getElementById("playerturn").value === "1") {
+            if($(this).attr('class') === 'square') {
+                $(this).val('x');
+            }
+        }
+
+        else if (document.getElementById("playerturn").value === "2") {
+            if($(this).attr('class') === 'square'){
+                $(this).val('o');
+            }
+        }
+    })
+
+    $('#sq4').click(function () {
+        $("#sq1, #sq2, #sq3, #sq5, #sq6, #sq7, #sq8, #sq9").val('');
+        if (document.getElementById("playerturn").value === "1") {
+            if($(this).attr('class') === 'square') {
+                $(this).val('x');
+            }
+        }
+
+        else if (document.getElementById("playerturn").value === "2") {
+            if($(this).attr('class') === 'square'){
+                $(this).val('o');
+            }
+        }
+    })
+
+    $('#sq5').click(function () {
+        $("#sq1, #sq2, #sq3, #sq4, #sq6, #sq7, #sq8, #sq9").val('');
+        if (document.getElementById("playerturn").value === "1") {
+            if($(this).attr('class') === 'square') {
+                $(this).val('x');
+            }
+        }
+
+        else if (document.getElementById("playerturn").value === "2") {
+            if($(this).attr('class') === 'square'){
+                $(this).val('o');
+            }
+        }
+    })
+
+    $('#sq6').click(function () {
+        $("#sq1, #sq2, #sq3, #sq4, #sq5, #sq7, #sq8, #sq9").val('');
+        if (document.getElementById("playerturn").value === "1") {
+            if($(this).attr('class') === 'square') {
+                $(this).val('x');
+            }
+        }
+
+        else if (document.getElementById("playerturn").value === "2") {
+            if($(this).attr('class') === 'square'){
+                $(this).val('o');
+            }
+        }
+    })
+
+    $('#sq7').click(function () {
+        $("#sq1, #sq2, #sq3, #sq4, #sq5, #sq6, #sq8, #sq9").val('');
+        if (document.getElementById("playerturn").value === "1") {
+            if($(this).attr('class') === 'square') {
+                $(this).val('x');
+            }
+        }
+
+        else if (document.getElementById("playerturn").value === "2") {
+            if($(this).attr('class') === 'square'){
+                $(this).val('o');
+            }
+        }
+
+    })
+
+    $('#sq8').click(function () {
+        $("#sq1, #sq2, #sq3, #sq4, #sq5, #sq6, #sq7, #sq9").val('');
+        if (document.getElementById("playerturn").value === "1") {
+            if($(this).attr('class') === 'square') {
+                $(this).val('x');
+            }
+        }
+
+        else if (document.getElementById("playerturn").value === "2") {
+            if($(this).attr('class') === 'square'){
+                $(this).val('o');
+            }
+        }
+    })
+
+    $('#sq9').click(function () {
+        $("#sq1, #sq2, #sq3, #sq4, #sq5, #sq6, #sq7, #sq8").val('');
+        if (document.getElementById("playerturn").value === "1") {
+            if($(this).attr('class') === 'square') {
+                $(this).val('x');
+            }
+        }
+
+        else if (document.getElementById("playerturn").value === "2") {
+            if($(this).attr('class') === 'square'){
+                $(this).val('o');
+            }
+        }
     })
 }
 
