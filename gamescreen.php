@@ -75,9 +75,6 @@ echo $score_board
                     <div class="clr"></div>
                     <button type="submit" id="take_turn" class="turn_button">End Turn</button>
                 </form>
-                <form action="scripts/reset_game.php" method="POST">
-                    <button type="submit" id="whatever" class="reset_button">Reset game</button>
-                </form>
                 <br>
             </div>
         </div>

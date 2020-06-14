@@ -16,6 +16,20 @@ $json_file = fopen('../data/gamestate.json', 'w');
 fwrite($json_file, json_encode($data));
 fclose($json_file);
 
-header("Location: ../index.php");
+
+$json_file = file_get_contents("../data/data.json");
+$data2 = json_decode($json_file, true);
+
+$data2[0]['wins'] = $data2[0]['wins'] + 1;
+$data2[1]['losses'] = $data2[1]['losses'] + 1;
+
+
+// Save to external file
+$json_file = fopen('../data/data.json', 'w');
+fwrite($json_file, json_encode($data2));
+fclose($json_file);
+
+header("Location: ../gamescreen.php");
 die();
+
 ?>
