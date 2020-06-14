@@ -34,7 +34,7 @@ ul{
     margin-left: 35px;
 }
 
-#board form {
+#board {
     font-family: 'Roboto', cursive;
 }
 
@@ -103,7 +103,6 @@ ul{
     position: relative;
     text-align: center;
     font-size: 50px;
-    font-family: 'Press Start 2P', cursive;
 }
 
 #content {
@@ -205,7 +204,6 @@ input::-webkit-inner-spin-button {
     overflow: hidden;
     cursor: pointer;
     margin-top: 20px;
-    font-family: 'Press Start 2P', cursive;
 }
 
 .turn_button:hover {opacity: 1}
