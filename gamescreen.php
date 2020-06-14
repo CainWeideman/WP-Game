@@ -24,7 +24,7 @@ $score_board.= '<div class="row header">';
 $score_board.= '<h1>Tic-Tac-Toe</h1>';
 $score_board.= '<div class="status-bar">';
 $score_board.= '<div class="status col-md-4">';
-$score_board.= '<h3>Player one: ' . $score[0]["name"] . '</h3>';
+$score_board.= '<h3>Player 1: ' . $score[0]["name"] . '</h3>';
 $score_board.= '<p id="winsp1">Wins: ' . $score[0]["wins"] . '</p>';
 $score_board.= '<p id="lossesp1">Losses: ' . $score[0]["losses"] . '</p>';
 $score_board.= '<p id="drawsp1">Draws: ' . $score[0]["draws"] . '</p>';
@@ -32,7 +32,7 @@ $score_board.= '</div>';
 $score_board.= '<div class="col-md-4"><h4>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</h4>';
 $score_board.= '</div>';
 $score_board.= '<div class="status col-md-4">';
-$score_board.= '<h3>Player two: ' . $score[1]["name"] . '</h3>';
+$score_board.= '<h3>Player 2: ' . $score[1]["name"] . '</h3>';
 $score_board.= '<p id="winsp2">Wins: ' . $score[1]["wins"] . '</p>';
 $score_board.= '<p id="lossesp2">Losses: ' . $score[1]["losses"] . '</p>';
 $score_board.= '<p id="drawsp2">Draws: ' . $score[1]["draws"] . '</p>';
@@ -47,7 +47,7 @@ echo $score_board
 <div class="col-md-12">
     <div class="row">
     <div class="form-group">
-        <label for="playerturn">Player:</label>
+        <label for="playerturn">Current playerturn:</label>
         <input type="number" class="form-control" id="playerturn" name="playerturn" value='1' readonly>
     </div>
         <div id="content">
