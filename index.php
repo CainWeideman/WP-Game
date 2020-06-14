@@ -16,11 +16,19 @@ include __DIR__ . '/tpl/body-start.php';
     <form action="scripts/add_name.php" method="POST">
         <div class="form-group">
             <label id="name-label" for="name">Please enter your name:</label>
-            <input type="text" class="form-control" id="name" placeholder="Enter your name" name="name">
+            <input type="text" class="form-control" id="name" placeholder="Enter your name" name="name" required>
         </div>
         <button type="submit" id="submit" class="button"><span>Submit </span></button>
     </form>
-
 <?php
 include __DIR__ . '/tpl/body-end.php';
 ?>
+<footer>
+    <ul>
+        <li><p id="made-header">Made by: </p></li>
+        <li><p class="made-name">Stijn van Straaten</p></li>
+        <li><p class="made-name">Robin Elting</p></li>
+        <li><p class="made-name">Thijs Brekhof</p></li>
+        <li><p class="made-name">Cain Weideman</p></li>
+    </ul>
+</footer>

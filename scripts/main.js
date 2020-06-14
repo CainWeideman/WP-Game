@@ -158,85 +158,85 @@ function checkWin () {
         if (win[0]["value"] === win[1]["value"] && win[1]["value"] === win[2]["value"]) {
             if (win[0]["value"] !== "") {
                 if (win[0]["value"] === "x") {
-                    window.location.href="win.html"
+                    window.location.href="html/win.html"
                 }
                 else {
-                    window.location.href="winp2.html"
+                    window.location.href="html/winp2.html"
                 }
             }
         }
         if (win[3]["value"] === win[4]["value"] && win[4]["value"] === win[5]["value"]) {
             if (win[3]["value"] !== "") {
                 if (win[3]["value"] === "x") {
-                    window.location.href="win.html"
+                    window.location.href="html/win.html"
                 }
                 else {
-                    window.location.href="winp2.html"
+                    window.location.href="html/winp2.html"
                 }
             }
         }
         if (win[6]["value"] === win[7]["value"] && win[7]["value"] === win[8]["value"]) {
             if (win[6]["value"] !== "") {
                 if (win[6]["value"] === "x") {
-                    window.location.href="win.html"
+                    window.location.href="html/win.html"
                 }
                 else {
-                    window.location.href="winp2.html"
+                    window.location.href="html/winp2.html"
                 }
             }
         }
         if (win[0]["value"] === win[3]["value"] && win[3]["value"] === win[6]["value"]) {
             if (win[0]["value"] !== "") {
                 if (win[0]["value"] === "x") {
-                    window.location.href="win.html"
+                    window.location.href="html/win.html"
                 }
                 else {
-                    window.location.href="winp2.html"
+                    window.location.href="html/winp2.html"
                 }
             }
         }
         if (win[1]["value"] === win[4]["value"] && win[4]["value"] === win[7]["value"]) {
             if (win[1]["value"] !== "") {
                 if (win[1]["value"] === "x") {
-                    window.location.href="win.html"
+                    window.location.href="html/win.html"
                 }
                 else {
-                    window.location.href="winp2.html"
+                    window.location.href="html/winp2.html"
                 }
             }
         }
         if (win[2]["value"] === win[5]["value"] && win[5]["value"] === win[8]["value"]) {
             if (win[2]["value"] !== "") {
                 if (win[2]["value"] === "x") {
-                    window.location.href="win.html"
+                    window.location.href="html/win.html"
                 }
                 else {
-                    window.location.href="winp2.html"
+                    window.location.href="html/winp2.html"
                 }
             }
         }
         if (win[0]["value"] === win[4]["value"] && win[4]["value"] === win[8]["value"]) {
             if (win[0]["value"] !== "") {
                 if (win[0]["value"] === "x") {
-                    window.location.href="win.html"
+                    window.location.href="html/win.html"
                 }
                 else {
-                    window.location.href="winp2.html"
+                    window.location.href="html/winp2.html"
                 }
             }
         }
         if (win[2]["value"] === win[4]["value"] && win[4]["value"] === win[6]["value"]) {
             if (win[2]["value"] !== "") {
                 if (win[2]["value"] === "x") {
-                    window.location.href="win.html"
+                    window.location.href="html/win.html"
                 }
                 else {
-                    window.location.href="winp2.html"
+                    window.location.href="html/winp2.html"
                 }
             }
         }
         if (win[0]["value"] !== "" && win[1]["value"] !== "" && win[2]["value"] !== "" && win[3]["value"] !== "" && win[4]["value"] !== "" && win[5]["value"] !== "" && win[6]["value"] !== "" && win[7]["value"] !== "" && win[8]["value"] !== "") {
-            window.location.href="tie.html"
+            window.location.href="html/tie.html"
         }
     });
 }
@@ -257,7 +257,7 @@ function changeFont() {
 $(function() {
     change_page();
     draw();
-    changeFont();
+    //changeFont();
 
     window.setInterval(function () {
 

@@ -55,7 +55,7 @@ echo $score_board
 <div class="col-md-12">
     <div class="row">
     <div class="form-group">
-        <label id="turn-label" for="playerturn">Current playerturn:</label>
+        <label id="turn-label" for="playerturn">Current player turn:</label>
         <input type="number" class="form-control" id="playerturn" name="playerturn" value='1' readonly>
     </div>
         <div id="content">

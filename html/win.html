@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <title>Win screen</title>
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
 <body>
 <div class="win-text">
-    <p id="status-text">Player 2 wins!</p>
-    <form action="scripts/win2.php" method="POST">
-        <button type="submit" id="whatever" class="reset_button">New Game</button>
+    <p id="status-text">Player 1 wins!</p>
+    <form action="../scripts/win.php" method="POST">
+        <button type="submit" id="whatever" class="reset_button">Next Round</button>
     </form>
-    <form action="scripts/reset_game.php" method="POST">
+    <form action="../scripts/reset_game.php" method="POST">
         <button type="submit" name="exit" id="score" class="reset_button">Exit Game</button>
     </form>
 </div>
