@@ -204,6 +204,7 @@ input::-webkit-inner-spin-button {
     overflow: hidden;
     cursor: pointer;
     margin-top: 20px;
+    font-family: 'Press Start 2P', cursive;
 }
 
 .turn_button:hover {opacity: 1}

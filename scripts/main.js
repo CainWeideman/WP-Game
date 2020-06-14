@@ -241,23 +241,10 @@ function checkWin () {
     });
 }
 
-function changeFont() {
-    // Changes the font/version of the game
-    $('#select-font').change(function () {
-        var ff = $('#select-font').val();
-        if (ff === 'modern') {
-            document.body.style.fontFamily = "'Pangolin', cursive";
-        } else if (ff === 'retro') {
-            document.body.style.fontFamily = "'Press Start 2P', cursive";
-        }
-    })
-}
-
-
 $(function() {
     change_page();
     draw();
-    //changeFont();
+    changeFont();
 
     window.setInterval(function () {
 
@@ -283,6 +270,8 @@ $(function() {
             var drawsp2 = document.getElementById("drawsp2").innerHTML = info[1]["draws"];
             document.getElementById("drawsp1").innerHTML = "Draws: " + drawsp1.toFixed(0);
             document.getElementById("drawsp2").innerHTML = "Draws: " + drawsp2.toFixed(0);
+
+
         });
 
         fetchJSONFile('data/gamestate.json', function (data) {
@@ -323,5 +312,5 @@ $(function() {
 
         })
         checkWin()
-    }, 500);
+    }, 100);
 })

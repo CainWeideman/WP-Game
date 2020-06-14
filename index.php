@@ -18,13 +18,6 @@ include __DIR__ . '/tpl/body-start.php';
             <label id="name-label" for="name">Please enter your name:</label>
             <input type="text" class="form-control" id="name" placeholder="Enter your name" name="name" required>
         </div>
-        <div class="form-group">
-            <label for="select-font">Choose your font:</label>
-            <select id="select-font" name="select-font">
-                <option value="retro">Retro</option>
-                <option value="modern">Modern</option>
-            </select>
-        </div>
         <button type="submit" id="submit" class="button"><span>Submit </span></button>
     </form>
 <?php
