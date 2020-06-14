@@ -15,6 +15,11 @@ if (isset($_POST['name'])) {
         $data[1]['wins'] = 0;
         $data[1]['losses'] = 0;
         $data[1]['draws'] = 0;
+        if ($selectOption === 'modern') {
+            $data[0]["font"] = "'Pangolin', cursive";
+        } else if ($selectOption === 'retro') {
+            $data[0]["font"] = "'Press Start 2P', cursive";
+        }
     }
 
     else {
@@ -26,13 +31,13 @@ if (isset($_POST['name'])) {
         $data[0]['wins'] = 0;
         $data[0]['losses'] = 0;
         $data[0]['draws'] = 0;
+        if ($selectOption === 'modern') {
+            $data[1]["font"] = "'Pangolin', cursive";
+        } else if ($selectOption === 'retro') {
+            $data[1]["font"] = "'Press Start 2P', cursive";
+        }
     }
 
-    if ($selectOption === 'modern') {
-        $data[3]["font"] = "'Pangolin', cursive";
-    } else if ($selectOption === 'retro') {
-        $data[3]["font"] = "'Press Start 2P', cursive";
-    }
 
     // Save to external file
     $json_file = fopen('../data/data.json', 'w');

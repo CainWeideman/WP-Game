@@ -284,11 +284,14 @@ $(function() {
             document.getElementById("drawsp1").innerHTML = "Draws: " + drawsp1;
             document.getElementById("drawsp2").innerHTML = "Draws: " + drawsp2;
 
-            if(info[3]["font"] === "'Pangolin', cursive"){
+            if(info[0]["font"] === "'Pangolin', cursive"){
                 document.body.style.fontFamily = "'Pangolin', cursive";
             }
-            else if(info[3]["font"] === "'Press Start 2P', cursive"){
+            else if(info[0]["font"] === "'Press Start 2P', cursive"){
                 document.body.style.fontFamily = "'Press Start 2P', cursive";
+            }
+            else if(info[1]["font"] === "'Pangolin', cursive"){
+                document.body.style.fontFamily = "'Pangolin', cursive";
             }
         });
 
