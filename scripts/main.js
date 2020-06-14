@@ -264,25 +264,25 @@ $(function() {
         fetchJSONFile('data/data.json', function (data) {
             info = data
             // Here the name gets updated
-            var name1 = document.getElementById("name1").innerHTML = info[1]["name"]
-            var name2 = document.getElementById("name1").innerHTML = info[0]["name"]
+            var name1 = document.getElementById("name1").innerHTML = info[0]["name"]
+            var name2 = document.getElementById("name1").innerHTML = info[1]["name"]
             document.getElementById("name1").innerHTML = "Player one: " + name1;
             document.getElementById("name2").innerHTML = "Player two: " + name2;
             // Here the wins get updated
-            var winsp1 = document.getElementById("winsp1").innerHTML = info[1]["wins"];
-            var winsp2 = document.getElementById("winsp2").innerHTML = info[0]["wins"];
-            document.getElementById("winsp1").innerHTML = "Wins: " + winsp1;
-            document.getElementById("winsp2").innerHTML = "Wins: " + winsp2;
+            var winsp1 = document.getElementById("winsp1").innerHTML = info[0]["wins"];
+            var winsp2 = document.getElementById("winsp2").innerHTML = info[1]["wins"];
+            document.getElementById("winsp1").innerHTML = "Wins: " + winsp1.toFixed(0);
+            document.getElementById("winsp2").innerHTML = "Wins: " + winsp2.toFixed(0);
             // Here the losses get updated
-            var lossesp1 = document.getElementById("lossesp1").innerHTML = info[1]["losses"];
-            var lossesp2 = document.getElementById("lossesp2").innerHTML = info[0]["losses"];
-            document.getElementById("lossesp1").innerHTML = "Losses: " + lossesp1;
-            document.getElementById("lossesp2").innerHTML = "Losses: " + lossesp2;
+            var lossesp1 = document.getElementById("lossesp1").innerHTML = info[0]["losses"];
+            var lossesp2 = document.getElementById("lossesp2").innerHTML = info[1]["losses"];
+            document.getElementById("lossesp1").innerHTML = "Losses: " + lossesp1.toFixed(0);
+            document.getElementById("lossesp2").innerHTML = "Losses: " + lossesp2.toFixed(0);
             // Here the draws get updated
-            var drawsp1 = document.getElementById("drawsp1").innerHTML = info[1]["draws"];
-            var drawsp2 = document.getElementById("drawsp2").innerHTML = info[0]["draws"];
-            document.getElementById("drawsp1").innerHTML = "Draws: " + drawsp1;
-            document.getElementById("drawsp2").innerHTML = "Draws: " + drawsp2;
+            var drawsp1 = document.getElementById("drawsp1").innerHTML = info[0]["draws"];
+            var drawsp2 = document.getElementById("drawsp2").innerHTML = info[1]["draws"];
+            document.getElementById("drawsp1").innerHTML = "Draws: " + drawsp1.toFixed(0);
+            document.getElementById("drawsp2").innerHTML = "Draws: " + drawsp2.toFixed(0);
         });
 
         fetchJSONFile('data/gamestate.json', function (data) {
@@ -323,5 +323,5 @@ $(function() {
 
         })
         checkWin()
-    }, 100);
+    }, 500);
 })

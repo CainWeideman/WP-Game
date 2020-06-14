@@ -20,8 +20,8 @@ fclose($json_file);
 $json_file = file_get_contents("../data/data.json");
 $data2 = json_decode($json_file, true);
 
-$data2[0]['wins'] = $data2[0]['wins'] + 1;
-$data2[1]['losses'] = $data2[1]['losses'] + 1;
+$data2[1]['wins'] = $data2[1]['wins'] + 0.5;
+$data2[0]['losses'] = $data2[0]['losses'] + 0.5;
 
 
 // Save to external file
