@@ -43,7 +43,15 @@ $score_board.= '</div>';
 echo $score_board
 
 ?>
-
+<div class="row">
+    <div class="form-group">
+        <label for="select-font">Choose your version:</label>
+        <select id="select-font">
+            <option value="modern">Modern</option>
+            <option value="retro">Retro</option>
+        </select>
+    </div>
+</div>
 <div class="col-md-12">
     <div class="row">
     <div class="form-group">
@@ -70,6 +78,7 @@ echo $score_board
                 <form action="scripts/reset_game.php" method="POST">
                     <button type="submit" id="whatever" class="reset_button">Reset game</button>
                 </form>
+                <br>
             </div>
         </div>
     </div>

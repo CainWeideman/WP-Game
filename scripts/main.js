@@ -258,10 +258,22 @@ function checkWin () {
     });
 }
 
+function changeFont() {
+    $('#select-font').change(function () {
+        var ff = $('#select-font').val();
+        if (ff === 'modern') {
+            document.body.style.fontFamily = "'Pangolin', cursive";
+        } else if (ff === 'retro') {
+            document.body.style.fontFamily = "'Press Start 2P', cursive";
+        }
+    })
+}
+
 
 $(function() {
     change_page();
-    draw()
+    draw();
+    changeFont();
 
     window.setInterval(function () {
 
