@@ -139,7 +139,7 @@ function draw () {
         $(".square").not("#sq9").attr('value', '');
         if ($('#playerturn').val() === "1") {
             if($(this).attr('class') === 'square') {
-                $(this).attr('value', 'x');;
+                $(this).attr('value', 'x');
             }
         }
 
@@ -158,102 +158,85 @@ function checkWin () {
         if (win[0]["value"] === win[1]["value"] && win[1]["value"] === win[2]["value"]) {
             if (win[0]["value"] !== "") {
                 if (win[0]["value"] === "x") {
-                    $('#status-text').text('Player One Wins!')
                     window.location.href="win.html"
                 }
                 else {
-                    $('#status-text').text('Player Two Wins!')
-                    window.location.href="win.html"
+                    window.location.href="winp2.html"
                 }
             }
         }
         if (win[3]["value"] === win[4]["value"] && win[4]["value"] === win[5]["value"]) {
             if (win[3]["value"] !== "") {
                 if (win[3]["value"] === "x") {
-                    $('#status-text').text('Player One Wins!')
                     window.location.href="win.html"
                 }
                 else {
-                    $('#status-text').text('Player Two Wins!')
-                    window.location.href="win.html"
+                    window.location.href="winp2.html"
                 }
             }
         }
         if (win[6]["value"] === win[7]["value"] && win[7]["value"] === win[8]["value"]) {
             if (win[6]["value"] !== "") {
                 if (win[6]["value"] === "x") {
-                    $('#status-text').text('Player One Wins!')
                     window.location.href="win.html"
                 }
                 else {
-                    $('#status-text').text('Player Two Wins!')
-                    window.location.href="win.html"
+                    window.location.href="winp2.html"
                 }
             }
         }
         if (win[0]["value"] === win[3]["value"] && win[3]["value"] === win[6]["value"]) {
             if (win[0]["value"] !== "") {
                 if (win[0]["value"] === "x") {
-                    $('#status-text').text('Player One Wins!')
                     window.location.href="win.html"
                 }
                 else {
-                    $('#status-text').text('Player Two Wins!')
-                    window.location.href="win.html"
+                    window.location.href="winp2.html"
                 }
             }
         }
         if (win[1]["value"] === win[4]["value"] && win[4]["value"] === win[7]["value"]) {
             if (win[1]["value"] !== "") {
                 if (win[1]["value"] === "x") {
-                    $('#status-text').text('Player One Wins!')
                     window.location.href="win.html"
                 }
                 else {
-                    $('#status-text').text('Player Two Wins!')
-                    window.location.href="win.html"
+                    window.location.href="winp2.html"
                 }
             }
         }
         if (win[2]["value"] === win[5]["value"] && win[5]["value"] === win[8]["value"]) {
             if (win[2]["value"] !== "") {
                 if (win[2]["value"] === "x") {
-                    $('#status-text').text('Player One Wins!')
                     window.location.href="win.html"
                 }
                 else {
-                    $('#status-text').text('Player Two Wins!')
-                    window.location.href="win.html"
+                    window.location.href="winp2.html"
                 }
             }
         }
         if (win[0]["value"] === win[4]["value"] && win[4]["value"] === win[8]["value"]) {
             if (win[0]["value"] !== "") {
                 if (win[0]["value"] === "x") {
-                    $('#status-text').text('Player One Wins!')
                     window.location.href="win.html"
                 }
                 else {
-                    $('#status-text').text('Player Two Wins!')
-                    window.location.href="win.html"
+                    window.location.href="winp2.html"
                 }
             }
         }
         if (win[2]["value"] === win[4]["value"] && win[4]["value"] === win[6]["value"]) {
             if (win[2]["value"] !== "") {
                 if (win[2]["value"] === "x") {
-                    $('#status-text').text('Player One Wins!')
                     window.location.href="win.html"
                 }
                 else {
-                    $('#status-text').text('Player Two Wins!')
-                    window.location.href="win.html"
+                    window.location.href="winp2.html"
                 }
             }
         }
         if (win[0]["value"] !== "" && win[1]["value"] !== "" && win[2]["value"] !== "" && win[3]["value"] !== "" && win[4]["value"] !== "" && win[5]["value"] !== "" && win[6]["value"] !== "" && win[7]["value"] !== "" && win[8]["value"] !== "") {
-            $('#status-text').text("It's a Tie!")
-            window.location.href="win.html"
+            window.location.href="tie.html"
         }
     });
 }
