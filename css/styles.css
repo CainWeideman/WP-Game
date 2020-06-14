@@ -2,6 +2,7 @@ body {
     margin: 0;
     padding: 0;
     width: 100%;
+    height: 100%;
     background-color: darkgray;
 }
 
@@ -9,6 +10,21 @@ body {
     width: 90%;
     background-color: white;
     margin: auto;
+    text-align: center;
+}
+
+.win-text{
+    position: absolute;
+    width: 500px;
+    height: 115px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: white;
+    text-align: center;
+    font-size: 250%;
 }
 
 .square {
@@ -45,7 +61,6 @@ body {
     text-align: center;
     justify-content: space-around;
     align-content: center;
-
 }
 
 .header {
@@ -126,6 +141,24 @@ input::-webkit-inner-spin-button {
 
 .turn_button:hover {opacity: 1}
 
+.reset_button{
+    position: relative;
+    background-color: #3376FF;
+    border: none;
+    font-size: 28px;
+    color: #FFFFFF;
+    padding: 20px;
+    width: 200px;
+    opacity: 0.8;
+    text-align: center;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.reset_button:hover {opacity: 1}
+
 .button {
     display: inline-block;
     border-radius: 4px;
@@ -168,8 +201,7 @@ input::-webkit-inner-spin-button {
     right: 0;
 }
 
-input:focus {
+#playerturn:focus {
     outline: none !important;
     box-shadow: none !important;
-    border: none;
 }
