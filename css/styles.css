@@ -34,10 +34,6 @@ ul{
     margin-left: 35px;
 }
 
-#board {
-    font-family: 'Roboto', cursive;
-}
-
 #index-header{
     font-size: 200%;
     margin-top: 30px;
@@ -144,17 +140,7 @@ ul{
 
 }
 
-.circle {
-    border-radius: 50%;
-    width: 90px;
-    height: 90px;
-    fill: none;
-    position: absolute;
-    background-color: red;
-}
-
 .X-mark {
-    color: red;
     text-align: center;
     width: 90px;
     height: 90px;
@@ -163,7 +149,6 @@ ul{
 }
 
 .O-mark {
-    color: red;
     text-align: center;
     width: 90px;
     height: 90px;
@@ -171,18 +156,14 @@ ul{
     font-size: 50px;
 }
 
-.active1{
-    background-color: green;
-}
-
-.active2{
-    background-color: red;
-}
-
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance:textfield;
 }
 
 #playerturn{

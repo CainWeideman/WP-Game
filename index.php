@@ -1,6 +1,6 @@
 <?php
 /* Header */
-$page_title = 'Tic-tac-toe';
+$page_title = 'Tic-Tac-Toe';
 
 include __DIR__ . '/tpl/head.php';
 

@@ -155,6 +155,10 @@ function checkWin () {
 
     fetchJSONFile('data/gamestate.json', function (data) {
         win = data
+
+        if (win[0]["value"] !== "" && win[1]["value"] !== "" && win[2]["value"] !== "" && win[3]["value"] !== "" && win[4]["value"] !== "" && win[5]["value"] !== "" && win[6]["value"] !== "" && win[7]["value"] !== "" && win[8]["value"] !== "") {
+            window.location.href="html/tie.html"
+        }
         if (win[0]["value"] === win[1]["value"] && win[1]["value"] === win[2]["value"]) {
             if (win[0]["value"] !== "") {
                 if (win[0]["value"] === "x") {
@@ -235,9 +239,6 @@ function checkWin () {
                 }
             }
         }
-        if (win[0]["value"] !== "" && win[1]["value"] !== "" && win[2]["value"] !== "" && win[3]["value"] !== "" && win[4]["value"] !== "" && win[5]["value"] !== "" && win[6]["value"] !== "" && win[7]["value"] !== "" && win[8]["value"] !== "") {
-            window.location.href="html/tie.html"
-        }
     });
 }
 
@@ -294,7 +295,6 @@ $(function() {
                 if (gamestate[item]["value"] === "x") {
                     $(document.getElementById(gamestate[item]["square"]).disabled = true);
                     let square = document.getElementsByClassName("square")
-                    //if ($(document.getElementById(gamestate[item]["square"])).contents().length == 0) {
                     $(document.getElementById(gamestate[item]["square"]).value = 'x')
 
                    }
@@ -302,13 +302,10 @@ $(function() {
                 if (gamestate[item]["value"] === "o") {
                     $(document.getElementById(gamestate[item]["square"]).disabled = true);
                     let square = document.getElementsByClassName("square")
-                    //if ($(document.getElementById(gamestate[item]["square"])).contents().length == 0) {
                     $(document.getElementById(gamestate[item]["square"]).value = 'o')
 
                     }
                 }
-            //}
-
         })
         checkWin()
     }, 100);

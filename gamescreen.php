@@ -1,6 +1,6 @@
 <?php
 /* Header */
-$page_title = 'Tic-tac-toe';
+$page_title = 'Tic-Tac-Toe';
 
 include __DIR__ . '/tpl/head.php';
 
@@ -43,15 +43,6 @@ $score_board.= '</div>';
 echo $score_board
 
 ?>
-<div class="row">
-    <div class="form-group">
-        <label for="select-font">Choose your version:</label>
-        <select id="select-font">
-            <option value="modern">Modern</option>
-            <option value="retro">Retro</option>
-        </select>
-    </div>
-</div>
 <div class="col-md-12">
     <div class="row">
     <div class="form-group">
