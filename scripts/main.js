@@ -151,19 +151,6 @@ function draw () {
     })
 }
 
-function resetGame() {
-    //alert("Its a tie!")
-    $("#sq1").val("")
-    $("#sq2").val("")
-    $("#sq3").val("")
-    $("#sq4").val("")
-    $("#sq5").val("")
-    $("#sq6").val("")
-    $("#sq7").val("")
-    $("#sq8").val("")
-    $("#sq9").val("")
-}
-
 function checkWin () {
 
     fetchJSONFile('data/gamestate.json', function (data) {
