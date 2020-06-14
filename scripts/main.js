@@ -242,6 +242,7 @@ function checkWin () {
 }
 
 function changeFont() {
+    // Changes the font/version of the game
     $('#select-font').change(function () {
         var ff = $('#select-font').val();
         if (ff === 'modern') {
