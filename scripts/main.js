@@ -244,7 +244,6 @@ function checkWin () {
 $(function() {
     change_page();
     draw();
-    changeFont();
 
     window.setInterval(function () {
 
