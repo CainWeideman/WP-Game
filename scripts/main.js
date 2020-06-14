@@ -244,10 +244,10 @@ function checkWin () {
 function changeFont() {
     // Changes the font/version of the game
     $('#select-font').change(function () {
-        var ff = $('#select-font').val();
-        if (ff === 'modern') {
+        var fontfamily = $('#select-font').val();
+        if (fontfamily === 'modern') {
             document.body.style.fontFamily = "'Pangolin', cursive";
-        } else if (ff === 'retro') {
+        } else if (fontfamily === 'retro') {
             document.body.style.fontFamily = "'Press Start 2P', cursive";
         }
     })
@@ -257,7 +257,7 @@ function changeFont() {
 $(function() {
     change_page();
     draw();
-    //changeFont();
+    changeFont();
 
     window.setInterval(function () {
 
@@ -283,6 +283,13 @@ $(function() {
             var drawsp2 = document.getElementById("drawsp2").innerHTML = info[0]["draws"];
             document.getElementById("drawsp1").innerHTML = "Draws: " + drawsp1;
             document.getElementById("drawsp2").innerHTML = "Draws: " + drawsp2;
+
+            if(info[3]["font"] === "'Pangolin', cursive"){
+                document.body.style.fontFamily = "'Pangolin', cursive";
+            }
+            else if(info[3]["font"] === "'Press Start 2P', cursive"){
+                document.body.style.fontFamily = "'Press Start 2P', cursive";
+            }
         });
 
         fetchJSONFile('data/gamestate.json', function (data) {
