@@ -6,10 +6,22 @@ if (isset($_POST['name'])) {
     if($data[2]['count'] === "1") {
         $data[0]['name'] = $_POST['name'];
         $data[2]['count'] = "2";
+        $data[0]['wins'] = 0;
+        $data[0]['losses'] = 0;
+        $data[0]['draws'] = 0;
+        $data[1]['wins'] = 0;
+        $data[1]['losses'] = 0;
+        $data[1]['draws'] = 0;
     }
     else {
         $data[1]['name'] = $_POST['name'];
         $data[2]['count'] = "1";
+        $data[1]['wins'] = 0;
+        $data[1]['losses'] = 0;
+        $data[1]['draws'] = 0;
+        $data[0]['wins'] = 0;
+        $data[0]['losses'] = 0;
+        $data[0]['draws'] = 0;
     }
 
     // Generate article ID
